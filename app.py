@@ -42,8 +42,8 @@ conn.commit()
 conn.close()
 
 # ---------------- EMAIL CONFIG ----------------
-SENDER_EMAIL = os.getenv("EMAIL_USER", "mthanusha05@gmail.com")
-SENDER_PASSWORD = os.getenv("EMAIL_PASS", "zbinunvqqvluzvzt")
+SENDER_EMAIL = os.getenv("EMAIL_USER")
+SENDER_PASSWORD = os.getenv("EMAIL_PASS")
 
 def send_alert_email(receiver_email, severity, vehicles, impact, clip_path):
     msg = EmailMessage()
