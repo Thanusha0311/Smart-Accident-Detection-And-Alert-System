@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Accident Detection & Alert System</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      color: #0d47a1;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      width: 400px;
+      margin: 0 auto;
+    }
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+      width: 90%;
+      border: 1px solid #90caf9;
+      border-radius: 10px;
+    }
+    button {
+      background-color: #0d47a1;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+    ul {
+      text-align: left;
+      color: #333;
+      list-style-type: "📅 ";
+    }
+    footer {
+      margin-top: 30px;
+      color: #777;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚗 Smart Accident Detection & Alert System</h1>
+  <p>Automatically detects accidents in uploaded video and sends alert.</p>
+
+  <div class="container">
+    <form id="uploadForm">
+      <input type="file" id="videoFile" accept="video/*" required /><br />
+      <input type="email" id="emailInput" placeholder="Enter email for alert" required /><br />
+      <button type="submit">Upload & Detect</button>
+    </form>
+
+    <div id="status" style="margin-top: 20px; font-weight: bold;"></div>
+
+    <h3 style="margin-top: 30px;">📜 Accident History</h3>
+    <ul id="history"></ul>
+  </div>
+
+  <footer> Mini Project Expo 2025</footer>
+  <script src="main.js"></script>
+</body>
+</html>

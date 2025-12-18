@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pillow
+numpy
+python-multipart
+sqlalchemy
+# optional:
+ultralytics    # only if you want to run YOLOv8 (install separately, may require torch)
+twilio         # if using Twilio SMS
