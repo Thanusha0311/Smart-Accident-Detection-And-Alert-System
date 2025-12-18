@@ -4,8 +4,8 @@ import smtplib
 from email.message import EmailMessage
 
 
-EMAIL_ADDRESS = "mthanusha05@gmail.com"
-EMAIL_PASSWORD = "zbinunvqqvluzvzt"
+EMAIL_ADDRESS = os.getenv("EMAIL_USER")
+EMAIL_PASSWORD =os.getenv("EMAIL_PASS")
 
 
 def ensure_folder(path: str):
